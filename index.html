@@ -50,13 +50,7 @@
 		</p>
 
 		<script>
-			/*function test() {
-				alert("It Works");
-			}*/
 			var socket = io();
-
-			document.body.style.width = window.innerWidth - 50 + 'px'; 
-			document.body.style.height = window.innerHeight - 50 + 'px'; 	
 			
 			var circle;
 			var radius = getRandomInt(20, 50);
@@ -75,7 +69,7 @@
 			
 			
 			function newTable() {
-				roomId = (Math.random().toString(36)).substring(2, 8);
+				roomId = (Math.random().toString(36)).substring(2, 6);
 				alert('Вы создали комнату ' + roomId);
 				socket.emit('create table', roomId);
 			};
