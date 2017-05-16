@@ -75,7 +75,7 @@
 			
 			
 			function newTable() {
-				roomId = (Math.random().toString(36)).substring(2);
+				roomId = (Math.random().toString(36)).substring(2, 8);
 				alert('Вы создали комнату ' + roomId);
 				socket.emit('create table', roomId);
 			};
