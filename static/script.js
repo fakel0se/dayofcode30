@@ -154,12 +154,9 @@ function tchmove(evt) {
 	var left = evt.touches[0].pageX;
 	var top = evt.touches[0].pageY; 
 	
-	var el = document.getElementById('my');
-	el.style.top = top - (radius/2) + 'px';
-	el.style.left = left - (radius/2) + 'px';
-	socket.emit('player moved', left - (radius/2), top - (radius/2));
-};
 
+	socket.emit('mouse moved', left - (radius/2), top - (radius/2));
+};
 
 
 //circle is on pointer
