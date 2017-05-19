@@ -160,12 +160,7 @@ function tchmove(evt) {
 	socket.emit('player moved', left - (radius/2), top - (radius/2));
 };
 
-/*function move(evt) {
-	var el = document.getElementById('my');
-	el.style.top = evt.x - (radius/2) + 'px';
-	el.style.left = evt.y - (radius/2) + 'px';
-	socket.emit('player moved', evt.x - (radius/2), evt.y - (radius/2));
-};*/
+
 
 //circle is on pointer
 function interval(a, b) 
